@@ -31,7 +31,12 @@ STEP 3: Creating a Dockerfile
 PHASE 2: DEPLOYING TO THE CLOUD
 
 STEP 1: Deploying to Azure
-
-STEP 2:
-
+  - Log in to Azure Account.
+    - az resource list (to ensure the account has been logged into).
+    - Deploy
+STEP 2: Create a Resource Group.
+  -  Deploy the resource group.
+     - az acr create --resource-group dockerrg --name jaydockerdemo --sku Basic
+  -  Look for the loginServer credentials in the log.
+  -
 STEP 3:
