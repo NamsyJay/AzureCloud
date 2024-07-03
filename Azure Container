@@ -1,5 +1,6 @@
 Deploying To Azure Container Registry
 
+PHASE 1: DEPLOYING LOCALLY
 STEP 1: Docker 
 Ensure Docker is running on your local machine.
   - docker version (Else you might need to install it).
@@ -26,8 +27,11 @@ STEP 3: Creating a Dockerfile
   - Run The Image
     - docker run --name jaynginxnew -d -p 8080:80 jaynginx
     - View in Browser
-STEP 4:
 
-STEP 5:
+PHASE 2: DEPLOYING TO THE CLOUD
 
-STEP 6:
+STEP 1: Deploying to Azure
+
+STEP 2:
+
+STEP 3:
