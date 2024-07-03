@@ -30,13 +30,35 @@ STEP 3: Creating a Dockerfile
 
 PHASE 2: DEPLOYING TO THE CLOUD
 
-STEP 1: Deploying to Azure
+STEP 1: Deploying to Azure.
   - Log in to Azure Account.
+    - az login (Log in Microsoft Account)
     - az resource list (to ensure the account has been logged into).
-    - Deploy
+    
 STEP 2: Create a Resource Group.
+  - az group create --name jayrg --location uksouth (Resource Group - "jayrg")
   -  Deploy the resource group.
      - az acr create --resource-group dockerrg --name jaydockerdemo --sku Basic
+     - *az acr create --resource-group jayrg --name jayacrdemo --sku Basic *
   -  Look for the loginServer credentials in the log.
-  -
-STEP 3:
+  - Login into the Azure container registry.
+    - az acr login --name jaydcokerdemo.azurecr.io
+
+STEP 3: Pushing Image Into Container Registry.
+  - Tag the Image
+    - docker tag jaynginx jaydcokerdemo.azurecr.io/jaynginx
+  - Push Image into registry
+    - docker push jaydcokerdemo.azurecr.io/jaynginx
+  - Head into Resource Groups
+    - View Image.
+
+STEP 4: Running Image In The Cloud.
+  - Head To Azure Container Instances.
+    - Create a Container instance
+    - Select jayresourcegroup, select jaydcokerdemo as registry
+    ** ENABLE ADMIN USER FOR REGISTRY TO ACCESS IMAGE DURING CONTAINER INSTANCE CREATION**
+      - Go to jaydcokerdemo in resource groups and access keys to enable admin.
+  - Continue to Building the Image.
+STEP 5: View Page.
+  - To View the Page, Copy the FDQN link and access it in the Browser.
+  CONGRATULATIONS!!!!
