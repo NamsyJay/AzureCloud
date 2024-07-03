@@ -1,1 +1,18 @@
-## Deploying To Azure Container Registry
+Deploying To Azure Container Registry
+
+STEP 1: Docker 
+Ensure Docker is running on your local machine.
+  - docker version (Else you might need to install it).
+  - Once that is done, ensure docker is running.
+  - docker ps (to view the images on your system).
+
+STEP 2: Nginx Image
+  - Pull an Nginx image from the dockerHub.
+  -
+STEP 3:
+
+STEP 4:
+
+STEP 5:
+
+STEP 6:
