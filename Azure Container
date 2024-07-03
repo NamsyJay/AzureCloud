@@ -8,9 +8,24 @@ Ensure Docker is running on your local machine.
 
 STEP 2: Nginx Image
   - Pull an Nginx image from the dockerHub.
-  -
-STEP 3:
+  - Run the image on your machine
+  - docker run --name nginxnew -d -p 8080:80 nginx
+  - docker ps (View the running image)
+  - View the Nginx server in the browser. CONGRATS!!
 
+STEP 3: Creating a Dockerfile
+  - Navigate to the intended directory.
+  - create a Dockefile, HTML file & notes.txt.
+  - Dockerfile (Contents)
+    -FROM nginx
+    COPY ./index.html /usr/share/nginx/html/index.html
+    EXPOSE 80
+  - Build The Image
+    - docker build -t jaynginx -f Dockerfile .
+    - docker images:- to view the created image.
+  - Run The Image
+    - docker run --name jaynginxnew -d -p 8080:80 jaynginx
+    - View in Browser
 STEP 4:
 
 STEP 5:
