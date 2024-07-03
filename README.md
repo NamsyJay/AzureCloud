@@ -1,5 +1,6 @@
 
-![Microsoft_Azure_development-management_600x146](https://github.com/NamsyJay/AzureCloud/assets/50235388/8cdd7915-ba40-45b3-a84b-82f73f224afc)
+![Azure-Logo-2020-present](https://github.com/NamsyJay/AzureCloud/assets/50235388/5f915095-78ed-441d-9cd7-04de900238ad)
+
 
 # AzureCloud
 Dedicated to Microsoft Azure Services
