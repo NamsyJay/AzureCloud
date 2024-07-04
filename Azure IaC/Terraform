@@ -1,5 +1,3 @@
-# Provisioning Resources With Terraform In Azure
-
 terraform {
   backend "local" {}
 
