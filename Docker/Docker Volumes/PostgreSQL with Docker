@@ -1,1 +1,1 @@
-A Volume is a directory on the host maachine that is mapped to a directory in the container.
+A Volume is a directory on the host machine mapped to a directory in the container.
