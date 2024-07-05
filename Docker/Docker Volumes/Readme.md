@@ -16,3 +16,23 @@ docker run --rm -d -v postgres-data/var/lib/postgresql/data\
     -e POSTGRES_USER=app_user -e POSTGRES_PASSWORD=app_password \
     postgres
 ```
+
+### Inside src folder, make .env for the database connection:
+```
+DBHOST=db
+DBNAME=postgres
+DBUSER-app_user
+DBPASS=app_password
+```
+
+### Inside src folder, build the container:
+```
+docker build --tag flasksurveycontainerapp .
+```
+
+### Run the app container over the same network:
+```
+docker run --rm -d --network postgres-net \
+    --name flask-db-app -p 50505:50505 \
+    flasksurveycontainerapp 
+```
