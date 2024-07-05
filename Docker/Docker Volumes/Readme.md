@@ -16,7 +16,7 @@ docker run --rm -d -v postgres-data/var/lib/postgresql/data\
     -e POSTGRES_USER=app_user -e POSTGRES_PASSWORD=app_password \
     postgres
 ```
-
+### STEP2: cd into the src folder
 ### Inside src folder, make .env for the database connection:
 ```
 DBHOST=db
