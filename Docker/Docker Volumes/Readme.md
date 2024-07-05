@@ -32,7 +32,7 @@ docker build --tag flasksurveycontainerapp .
 
 ### Run the app container over the same network:
 ```
-docker run --rm -d --network postgres-net \
+docker run --rm --network postgres-net \
     --name flask-db-app -p 50505:50505 \
     flasksurveycontainerapp 
 ```
