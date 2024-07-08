@@ -31,8 +31,15 @@ STEP 3: Creating a Dockerfile
 
 PHASE 2: DEPLOYING TO THE CLOUD
 
-STEP 1: Deploying to Azure
+STEP 1: Login into Azure
+  - Login into Azure Cloud
+    (az login - use passcode in the browser)
+    (az resource list to confirm if the Azure account has been logged in)
+    NOTE: az resource list --output table (Shows resources in Table format)
 
-STEP 2:
-
+STEP 2: Resource Group
+  - Create a resource Group if you do not already have one.
+  - Create an acr (Azure Container Registry).
+    -  (az acr create --resource-group NetworkWatcherRG --name akanjidemo --sku Basic)
+    -
 STEP 3:
