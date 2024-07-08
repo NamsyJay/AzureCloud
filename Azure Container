@@ -41,5 +41,23 @@ STEP 2: Resource Group
   - Create a resource Group if you do not already have one.
   - Create an acr (Azure Container Registry).
     -  (az acr create --resource-group NetworkWatcherRG --name akanjidemo --sku Basic)
-    -
-STEP 3:
+
+STEP 3: Login Into Azure Container Registry
+  - az acr login --name akanjidemo.azurecr.io
+  (Search for the LoginServer Credentials in the acr create logs) **Try  not to login Azure Cloud Shell**
+  - docker images to view containers in dockerhub
+  - Tag image
+    - docker tag akanjinginx harveydemo.azurecr.io/akanjinginx 
+  - Push Image to ACR
+    - docker push harveydemo.azurecr.io/akanjinginx
+    (Taken Existing Container, linked it to the ACR and pushed it into the AZR(In the Cloud).
+
+STEP 4: View Azure Container Repository
+  - View resource groups, harveydemo, akanjinginx
+
+STEP 5: Run Instance in the Azure Cloud
+  - Before you create a container instance
+    - Head to resource groups, acrrresourcegroup, harvey demo, access keys and toogle admin user.
+  - Head to create container instance
+  - select ACR Registry, give it a domain name and create.
+  - Once created, Azure will create a public IP Address.
