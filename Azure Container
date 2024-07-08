@@ -61,3 +61,6 @@ STEP 5: Run Instance in the Azure Cloud
   - Head to create container instance
   - select ACR Registry, give it a domain name and create.
   - Once created, Azure will create a public IP Address.
+  - Go to resource and view page.
+  - Copy FDQN and paste into the browser.
+  YAAY!!!!
