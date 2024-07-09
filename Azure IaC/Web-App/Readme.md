@@ -18,6 +18,7 @@ Terraform apply --auto-approve
 ```
 
 ## SECTION 2: ADVANCED COMMANDS IN TERRAFORM
+### PART 1
 ### Remote Backend for Terraform State
 It serves as a reference for Terraform to map real-world resources to your configuration, keep track of metadata, and improve performance for large infrastructures.
 
@@ -30,3 +31,12 @@ Terraform state stores additional information for resources, such as resource de
 
 ### 3. Performance Optimization:
 Storing state allows Terraform to make targeted updates and deletions rather than re-checking every resource. This speeds up operations on large infrastructures.
+### PART 2
+### Create a Resource Group 
+```
+az group create --name tf-state-rg --location uksouth 
+```
+### Create a Backend State File With Resource Group
+```
+az storage account create --name tfstatejay --location uksouth --resource-group tf-state-rg
+```
