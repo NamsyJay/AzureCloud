@@ -6,3 +6,14 @@
 ```
 Terraform init
 ```
+### Initialises Terraform in the folder
+
+```
+Terraform plan
+```
+### Displays resources that will be provisioned in Azure
+
+```
+Terraform apply --auto-approve
+```
+
