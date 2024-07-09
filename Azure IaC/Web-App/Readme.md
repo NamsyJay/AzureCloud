@@ -40,3 +40,7 @@ az group create --name tf-state-rg --location uksouth
 ```
 az storage account create --name tfstatejay --location uksouth --resource-group tf-state-rg
 ```
+### Create a Container
+```
+az storage container create --accountname tfsatejay --name tfstate --public-access off --account-key $ACCOUNT_KEY
+```
