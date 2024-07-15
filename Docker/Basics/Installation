@@ -1,7 +1,46 @@
 This will show you the basics when building a Docker Image.
 
-Prequisites: INSTALL VM & Login
-
+Prerequisites: INSTALL VM & Login
 ```shell
 sudo apt update -y
 ```
+
+STEP 1: Install Docker on VM 
+```shell
+sudo apt  install docker.io -y
+```
+STEP 2: Add User Permissions on Docker
+Docker commands run in sudo mode from the start; To change these permissions, run 
+
+```shell
+sudo usermod -aG docker azureuser
+```
+### If you have Applications running in the VM & you cannot restart.
+```shell
+newgrp docker
+```
+STEP 3: Then Pull An Image 
+```shell
+docker pull hello-world 
+```
+# Viewing The Images
+```shell
+docker images
+```
+STEP 4: Run The Application
+```shell
+docker run -d --name sonar -p 9000:9000 sonarqube:lts-community
+```
+### Runs The Application in detached mode.
+
+```shell
+docker ps  
+```
+## view's containers
+STEP 5: Run the Application in Browser.
+## Ensure The port 9000 has inbound rules access.
+
+STEP 6:
+
+
+STEP 7:
