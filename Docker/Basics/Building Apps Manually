@@ -1,0 +1,21 @@
+### STEP 1: Create a VM and Connect to Terminal
+
+In this case, we are using SSH protocol. 
+### STEP 2: Update The VM & Install The Necessary Dependencies
+sudo apt update -y
+java (Depending on the version needed for the application.)
+sudo apt install maven -y
+
+### STEP 3: Clone The Repository & Build the Application.
+git clone "the repo"
+cd into the File. 
+mvn package.
+
+### STEP 4:
+cd into the target folder
+ls to list the files in the target folder.
+java -jar filename... SNAPSHOT.jar (Run this command with the snapshot file).
+
+### STEP 5: Run the Application in the Browser.
+Copy the Public Address and port number.
+The application Should be Live.
