@@ -1,0 +1,7 @@
+This will show you the basics when building a Docker Image.
+
+Prequisites: INSTALL VM & Login
+
+```shell
+sudo apt update -y
+```
