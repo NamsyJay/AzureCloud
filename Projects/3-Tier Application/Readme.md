@@ -5,8 +5,8 @@ Building A 3-Tier Architecture With Terraform
 
 STEPS
 1) Secure The Presentation Tier (Front-End)
-   - Avoid Direct Public Endpoitn Access:The front-end should not directly access public internet endpoints.
-   - Implement A Web Server: Deploy Nginx, the webserver acts like an enrty point for users and control access to backend   
+   - Avoid Direct Public Endpoint Access:The front-end should not directly access public internet endpoints.
+   - Implement A Web Server: Deploy Nginx, the webserver acts like an entry point for users and control access to backend   
      services.
 2) Secure The Application Tier (Back-End)
    - Authentication and Authorisation: implement mechanisms within the API Gateway to     
