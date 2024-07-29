@@ -36,6 +36,12 @@ Storing state allows Terraform to make targeted updates and deletions rather tha
 ```
 az group create --name tf-state-rg --location uksouth 
 ```
+
+### View The Resource Group 
+```
+az group list --query "[?name=='teslarg']"
+```
+
 ### Create a Backend State File With Resource Group
 ```
 az storage account create --name tfstatejay --location uksouth --resource-group tf-state-rg
