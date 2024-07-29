@@ -39,7 +39,7 @@ az group create --name tf-state-rg --location uksouth
 
 ### View The Resource Group 
 ```
-az group list --query "[?name=='teslarg']"
+az group list --query "[?name=='tf-state-rg']"
 ```
 
 ### Create a Backend State File With Resource Group
