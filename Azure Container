@@ -39,6 +39,7 @@ STEP 1: Login into Azure
 
 STEP 2: Resource Group
   - Create a resource Group if you do not already have one.
+    - az group create --name myResourceGroup --location eastus.
   - Create an acr (Azure Container Registry).
     -  (az acr create --resource-group NetworkWatcherRG --name akanjidemo --sku Basic)
 
