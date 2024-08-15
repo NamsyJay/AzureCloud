@@ -1,0 +1,14 @@
+## This Helps you create multiple resources.
+
+resource "azurerm_storage_account" "hclmanchester447" {
+    count = 3
+    name                        = "${count.index}hclmanchester447"
+    resource_group_name         = "HCL_Technologies"
+    location                    = "West Europe"
+    account_tier                = "Standard"
+    account_replication_type    = "GRS"
+    account_kind                = "StorageV2"
+    depends_on = [
+        azurerm_resource_group.HCL_Technologies
+    ] 
+}
