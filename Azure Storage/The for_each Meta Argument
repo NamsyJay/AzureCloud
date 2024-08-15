@@ -4,11 +4,27 @@
 
 
 resource "azurerm_storage_container" "data" {
-    for_each = toset(["modelS", "modelX", "modelY", "plad"])
+    for_each = toset(["models", "modelx", "modely", "plad"])
     name                    = each.key
     storage_account_name    = "hclmanchester447"
     container_access_type   = "private"
     depends_on = [ 
         azurerm_resource_group.HCL_Technologies
     ]
+}
+
+
+## This involves the use of maps.
+##
+
+resource "azurerm_storage_blob" "files" {
+    for_each = {
+        headphones     = "C:\\MI6\\headphones.xlsx"
+        socialmedia    = "C:\\MI6\\socialmedia.xlsx"
+    }
+    name                   = "${each.key}.xlsx"
+    storage_account_name   = "hclmanchester447"
+    storage_container_name = "plad"
+    type                   = "Block"
+    source                 = each.value
 }
