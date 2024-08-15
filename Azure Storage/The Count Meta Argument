@@ -12,3 +12,13 @@ resource "azurerm_storage_account" "hclmanchester447" {
         azurerm_resource_group.HCL_Technologies
     ] 
 }
+
+resource "azurerm_storage_container" "data" {
+    count = 3
+    name                    = "${count.index}data"
+    storage_account_name    = "hclmanchester447"
+    container_access_type   = "private"
+    depends_on = [ 
+        azurerm_resource_group.HCL_Technologies
+    ]
+}
