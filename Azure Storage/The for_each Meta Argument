@@ -1,3 +1,14 @@
 ## This Helps to create multiple instances of a resource; here you define a set of strings. 
 ## Terraform will create an instance for each member in that set.
 ## Each object helps to modify the config of each instance.
+
+
+resource "azurerm_storage_container" "data" {
+    for_each = toset(["modelS", "modelX", "modelY", "plad"])
+    name                    = each.key
+    storage_account_name    = "hclmanchester447"
+    container_access_type   = "private"
+    depends_on = [ 
+        azurerm_resource_group.HCL_Technologies
+    ]
+}
