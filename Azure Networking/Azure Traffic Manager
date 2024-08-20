@@ -1,1 +1,8 @@
+### In This Project, 2 web Apps will be created with Azure Traffic Manager sitting Behind both Applications in Different regions. 
+Azure Traffic Manager will direct the users of the application based on the routing method selected.
 
+
+- Configure Traffic Manager Profile
+- Configure Endpoints
+-
+- 
