@@ -1,0 +1,3 @@
+Azure Virtual Network
+
+This allows communication between virtual networks across regions; This communicaton is via private IP Addresses.
