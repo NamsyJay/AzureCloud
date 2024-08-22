@@ -1,0 +1,6 @@
+## This shows how to deploy an Application Gateway with the URL routing feature.
+
+- Here there will be VMs parrt of the backend pools attached to the Application Gateways.
+- The users of the application will interact with the application and will be directed to the VMs based on the defined rules.
+- Based on the input in the URL, the users will be directed to the appropriate VM(Backpool).
+- A listener is configured and the Azure Application Gateway will listen for the requests.
