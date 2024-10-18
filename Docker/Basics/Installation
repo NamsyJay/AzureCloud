@@ -15,6 +15,10 @@ Docker commands run in sudo mode from the start; To change these permissions, ru
 ```shell
 sudo usermod -aG docker azureuser
 ```
+This grants access to all created users
+```shell
+sudo usermod 666 /var/run/docker.sh
+```
 ### If you have Applications running in the VM & you cannot restart.
 ```shell
 newgrp docker
