@@ -17,7 +17,7 @@ sudo usermod -aG docker azureuser
 ```
 This grants access to all created users
 ```shell
-sudo usermod 666 /var/run/docker.sh
+sudo usermod 666 /var/run/docker.sock
 ```
 ### If you have Applications running in the VM & you cannot restart.
 ```shell
