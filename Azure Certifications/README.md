@@ -1,4 +1,5 @@
-# Azure Certifications.
+![345365048-ad230a4c-32f1-45fc-bca9-f2ab0b235515](https://github.com/user-attachments/assets/3323369c-6afc-4810-8101-3226be611e42)
 
-This repository provides the study guide for Azure certifications; It shows my journey towards archieving my goals. 
-Follow the instructions below to run the program either in Google Colab or locally on your machine.
+# Azure Certifications.
+This repository provides the study guide for Azure certifications; It shows my journey towards achieving my goals. 
+Follow the study guide.
